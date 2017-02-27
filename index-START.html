@@ -58,8 +58,8 @@
   </style>
   <script>
 
-const arrow = document.querySelectior('.arrow');
-const speed = document.querySelectior('.speed');
+const arrow = document.querySelector('.arrow');
+const speed = document.querySelector('.speed');
 
 navigator.geolocation.watchPosition((data) => {
 speed.textContent = Math.round(data.coords.speed);
